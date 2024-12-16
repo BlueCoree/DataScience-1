@@ -222,34 +222,3 @@ INSERT INTO box_office (box_office_id, movie_id, country, revenue) VALUES
 (148, 50, 'USA', 206445654),
 (149, 50, 'China', 2871850),
 (150, 50, 'Indonesia', 629399);
-
-SELECT box_office_id, movie_id, country, FORMAT(revenue, 0) AS formatted_budget
-FROM box_office
-ORDER BY revenue ASC, country DESC;
-
-#menghitung ROI 
-SELECT title, release_year,
-	FORMAT(budget, 0) AS formatted_budget,
-	FORMAT(SUM(revenue), 0) AS total_revenue,
-    FORMAT((SUM(revenue) - budget) / budget * 100, 0) as ROI
-FROM movies
-JOIN box_office ON box_office.movie_id = movies.movie_id
-GROUP BY movies.movie_id, title
-ORDER BY (SUM(revenue) - budget) / budget * 100 DESC;
-
--- Analisis tren pendapatan based on genre and years
-SELECT genre, release_year,
-	FORMAT(AVG(revenue), 0) AS avg_revenue
-FROM movies
-JOIN box_office ON movies.movie_id = box_office.movie_id
-GROUP BY genre, release_year
-ORDER BY release_year, avg_revenue DESC;
-
--- Urutan negara dengan pendapatan terbanyak
-SELECT country,
-	FORMAT(SUM(revenue), 0) as total_revenue
-FROM box_office
-GROUP BY country
-ORDER BY SUM(revenue) DESC;
-
-
