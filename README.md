@@ -2,6 +2,6 @@
 
 Hi guys, this will be my first project in Data Science. Although this is just a dummy project, I learned a lot, especially when I use my database on MySQL in Python(in this case, I use PyCharm).
 
-PS: This project is not finished yet. I just dropped my database here. I made this database by myself, so I think it'll be better if I drop the database first, although the whole project is not finished yet.
+This project is already done, but need time to prepare to submit it to github. since this is my first time using this, so I'll learn about this stuff too.
 
-PS: I'll update this project more until it's done. It may not be perfect yet, but the goal is to integrate my lesson about this stuff into this project.
+And some code, i use my language (which is Indonesia) in my variable. in case some foreign guy wants to take a look at my bad code.
