@@ -68,8 +68,6 @@ INSERT INTO movies (movie_id, title, release_year, genre, budget, director, is_3
 (49, 'Transformer', 2007, 'Science Fiction/Action', 150000000, 'Michael Bay', true),
 (50, 'Ratatouille', 2007, 'Animation', 150000000, 'Brad Bird', true);
 
-SELECT movie_id, title, release_year, genre, FORMAT(budget, 0) AS formatted_budget, director, is_3d
-FROM movies;
 
 INSERT INTO box_office (box_office_id, movie_id, country, revenue) VALUES
 (1, 1, 'USA', 785221649),
