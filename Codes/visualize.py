@@ -43,4 +43,4 @@ fig3 = px.choropleth(
 
 filtered_df['country'] = filtered_df['country'].replace(country_mapping)
 fig3.write_html("viewer_distribution.html")
-print("Plot 'Distribusi Penonton Global' disimpan sebagai 'viewer_distribution.html'") #for this code, I'm still confused why the result only shows USA, but none the rest. I've already tried many ways but still can't figure it out :(
+print("Plot 'Distribusi Penonton Global' disimpan sebagai 'viewer_distribution.html'") #for this "country" code, I'm still confused why the result only shows the USA, but none of the rest. I've already tried many ways but still can't figure it out :(
