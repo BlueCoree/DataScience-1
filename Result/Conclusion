@@ -1,0 +1,45 @@
+|Analysis and Visualization of Global 3D Movie Audience Trends|
+
+📌 Project Description
+This project analyzes and visualizes global trends in 3D movie audiences based on a manually created dataset using MySQL. 
+The analysis includes comparisons between production budgets and revenues, audience distribution, and revenue trends of 3D movies over time.
+
+🛠️ Analysis Methods
+1. Data Extraction = Data is retrieved from MySQL using `Extract_Database.py`.
+2. Data Visualization =  `Visualization_Analysis.py` is used to generate various charts and insights.
+3. Types of Visualizations:
+   - Budget vs. Revenue Comparison(`budget_vs_revenue.html`)
+   - Revenue Trends Over the Years(`trend_revenue.html`)
+   - Audience Distribution by Region(`viewer_distribution.html`)
+
+📊 Analysis Results
+Based on the conducted analysis, several interesting insights about 3D movie trends have been uncovered:
+
+🔹 Budget vs. Revenue Correlation
+- Movies with higher production budgets tend to generate higher revenues.
+- Some low-budget films managed to achieve significant profits, indicating that factors such as marketing strategy and genre popularity also play a role.
+- The visualization reveals outliers where certain high-budget films did not achieve significant profits.
+
+🔹 Revenue Trends Over the Years
+- Revenue analysis shows a significant increase in 3D movie earnings during the early 2010s, likely due to advancements in 3D technology and rising popularity of the format.
+- After peaking in the mid-decade, revenue stabilized with minor fluctuations, indicating that 3D technology became an industry standard.
+- The highest-grossing years often coincide with the release of major blockbuster franchises.
+
+🔹 Audience Distribution by Region
+- North America and Asia have the highest number of viewers (based on Box Office Mojo data), reflecting Hollywood’s dominance and the growing consumption of films in Asian countries.
+- Europe also has a significant audience base, though it remains more stable compared to other regions.
+- South America and Africa show slower growth, likely due to cinema infrastructure and purchasing power factors.
+- The data suggests that region-specific distribution and marketing strategies can significantly boost audience numbers.
+- The analysis used here still uses several countries that have the highest revenue (based on Box Office Mojo data) and my own country, 
+  so it is still possible to add various countries from other continents so that the comparison can be more accurate.
+
+
+📝 Additional Notes
+- There are several codes that I'm still confused about, for example, regarding the 'Audience Distribution Based on Region' code. 
+I've tested in many ways so that the code can reveal the entire region that I created before, but somehow, only the USA appeared. Need to learn this advance.
+- Consider adding more genres for more variety so they can be compared with each other.
+- Consider adding more regions for more variety.
+
+📢 Contributions and Future Improvements
+- To enhance this project, consider adding a larger dataset or incorporating machine learning models to predict the success of 3D movies based on various factors.
+
